@@ -1,9 +1,24 @@
+:root{
+	--border-grey:#e7e7e7;
+	--one-hundred:100%;
+
+	--white:white;
+	--royalblue:royalblue;
+	--grey:grey;
+	--black:black;
+	--darkgrey:darkgrey;
+	--black-grey:#101010;
+	--red:red;
+}
+
+
+
 *{
 	box-sizing: border-box;
 }
 
 .baack{
-	background-color: white;
+	background-color: var(--white);
 }
 
 .navbar .font{
@@ -20,9 +35,9 @@
 }
 
 .img{
-	width:100%; 
+	width:var(--one-hundred); 
 	height: 300px; 
-	border:1px solid grey;
+	border:1px solid var(--grey);
 }
 
 .img2{
@@ -31,7 +46,7 @@
 }
 
 .img3{
-	width:100%; 
+	width:var(--one-hundred); 
 	height: 300px; 
 	margin-bottom: 3px;
 }
@@ -58,7 +73,7 @@ li{
 }
 
 .background{
-	background: white;
+	background: var(--white);
 }
 
 .navbar-nav{
@@ -71,15 +86,19 @@ li{
 }
 
 .btn-kike{
-	background: white;
-	border:1px solid black;
+	background: var(--white);
+	border:1px solid var(--black);
 	font-family: Arial Black;
 }
 
 .royal{
-	background: royalblue;
-	color: white;
+	background:var(--royalblue);
+	color: var(--white);
 	border-radius: 2px;
+}
+
+.royal-color{
+	color: var(--royalblue);
 }
 
 .baacks{
@@ -108,12 +127,12 @@ li{
 	width: 35px;
 	height: 35px;
 	padding: 10px;
-	background-color: darkgrey;
+	background-color: var(--darkgrey);
 	border-radius: 6px;
 }
 
 .grey{
-	background-color: darkgrey;
+	background-color: var(--darkgrey);
 	border-radius: 6px;
 }
 
@@ -133,7 +152,7 @@ li{
 }
 
 .color2{
-	color: #101010;
+	color: var(--black-grey);
 }
 
 .color2:hover{
@@ -143,19 +162,19 @@ li{
 
 .color{
 	text-decoration: none;
-	color: black;
+	color: var(--black);
 	background-color: transparent;
 }
 
 .color a{
 	text-decoration: none;
-	color: white;
+	color: var(--white);
 	background-color: transparent;
 }
 
 .color a:hover{
 	text-decoration: none;
-	color: white;
+	color:var(--white);
 }
 
 svg{
@@ -177,11 +196,11 @@ svg{
 
 .back{
 	background-color: #f5f5f5;
-	border:1px solid #e7e7e7;
+	border:1px solid var(--border-grey);
 }
 
 .backq{
-	background-color: white;
+	background-color: var(--white);
 	margin-top: 60px;
 }
 
@@ -206,5 +225,43 @@ svg{
 }
 
 .boordder{
-	border:1px solid darkgrey;
+	border:1px solid var(--darkgrey);
+}
+
+/********************************************
+*					AVATAR 					*
+********************************************/
+
+.avatar{
+	vertical-align: middle;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+/***********************************************
+*				HEART RED 					   *
+***********************************************/
+
+.heart:active{
+	color: var(--red);
+}
+
+/**********************************************
+*					SIZE SVG				  *
+**********************************************/
+.size-svg{
+	width: 50px;
+	height: 40px;
+}
+
+/**********************************************
+*				BUTTON SETTINGS 			  *
+**********************************************/
+
+.button-sett{
+	float: right; 
+	opacity: .8; 
+	background-color:transparent; 
+	border:none;
 }
